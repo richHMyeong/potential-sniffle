@@ -15,7 +15,7 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
             day[i] = day[i] / speeds[i];
         }
         else {
-            day[i] = day[i] / speeds[i] + 1; //³ª¸ÓÁö ÀÖÀ¸´Ï±î ÇÏ·ç ´õÇØÁÜ.
+            day[i] = day[i] / speeds[i] + 1; //ë‚˜ë¨¸ì§€ ìˆìœ¼ë‹ˆê¹Œ í•˜ë£¨ ë”í•´ì¤Œ.
         }
     }
     int val = day[0];
@@ -26,7 +26,7 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
         }
         else {
             answer.push_back(cnt);
-            val = val + (day[i] - val);
+            val = day[i];
             cnt = 1;
         }
     }

@@ -14,7 +14,6 @@ long long solution(int price, int money, int count)
     }
     else {
         answer = (money - sum) * -1;
-
     }
 
     return answer;

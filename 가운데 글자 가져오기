@@ -1,0 +1,19 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+string solution(string s) {
+    string answer = "";
+    
+    int ind;
+    if(s.size()%2==0){
+        ind = s.size()/2;
+        answer=answer+s[ind - 1]+s[ind];
+    }else{
+        ind = s.size()/2;
+        answer=s[ind];
+    }
+    
+    return answer;
+}
